@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kopiku Café</title>
+  <link rel="stylesheet" href="style (1).css" />
+  <!-- Google Fonts: Playfair Display + DM Sans -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <!-- Remix Icons for contact/benefit icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">
+      <span class="brand-icon">☕</span>
+      <span class="brand-name">Kopiku</span>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#" class="nav-item active" data-page="home" onclick="showPage('home', this)">Home</a></li>
+      <li><a href="#" class="nav-item" data-page="menu" onclick="showPage('menu', this)">Menu</a></li>
+    </ul>
+  </nav>
+
+  <!-- ==================== HOME PAGE ==================== -->
+  <main id="homePage" class="page active">
+
+    <!-- A. HERO SECTION -->
+    <section class="hero-section">
+      <!-- Ganti src berikut dengan path gambar Anda -->
+      <img src="images/2.jpg.jpeg" alt="Coffee and Croissant" class="hero-bg-img" id="heroBgImg" />
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">
+          <span>LIFE</span>
+          <span>BEGINS</span>
+          <span>AFTER</span>
+          <span class="hero-highlight">COFFEE</span>
+        </h1>
+      </div>
+      <!-- Petunjuk placeholder gambar -->
+      <div class="hero-img-hint"></div>
+    </section>
+
+    <!-- B. BENEFITS SECTION -->
+    <section class="benefits-section">
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <i class="ri-flashlight-line benefit-icon"></i>
+          <span>Energy Boosts</span>
+        </div>
+        <div class="benefit-card">
+          <i class="ri-emotion-happy-line benefit-icon"></i>
+          <span>Good Mood</span>
+        </div>
+        <div class="benefit-card">
+          <i class="ri-focus-3-line benefit-icon"></i>
+          <span>Better Focus</span>
+        </div>
+        <div class="benefit-card">
+          <i class="ri-leaf-line benefit-icon"></i>
+          <span>Antioxidants</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- C. KOPIKU SECTION -->
+    <section class="kopiku-section">
+      <div class="kopiku-card">
+        <div class="kopiku-text">
+          <h2>KOPIKU</h2>
+          <div class="divider"></div>
+          <p>Every cup of coffee is carefully crafted to bring warmth and comfort.</p>
+          <p>Take a moment to relax, enjoy the flavor, and make your day a little better.</p>
+        </div>
+        <div class="kopiku-img-wrap">
+          <!-- Ganti src berikut dengan gambar kopi Anda -->
+          <img src="images/2.jpg.jpeg" alt="Kopiku Coffee" class="kopiku-img" />
+          <div class="kopiku-img-hint"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- D. ABOUT US SECTION -->
+    <section class="about-section">
+      <div class="about-container">
+        <h2 class="section-title-light">ABOUT US</h2>
+        <div class="about-text">
+          <p>Welcome to Kopiku Café, a cozy place where every cup of coffee is made with care and every guest is welcomed like a friend.</p>
+          <p>As a newly established café, our goal is to create a warm and comfortable space for people to relax, study, work, or spend time with loved ones. We serve freshly brewed coffee, delicious matcha drinks, and homemade bakery items prepared with quality ingredients and passion.</p>
+          <p>At Kopiku Café, we believe that simple moments become special when shared over a good drink and a tasty treat.</p>
+          <p>We are committed to providing friendly service and creating memorable experiences for everyone who visits us.</p>
+        </div>
+
+        <!-- E. VISION & MISSION -->
+        <div class="vm-grid">
+          <div class="vm-card">
+            <h3>VISION</h3>
+            <p>To become a welcoming café that brings people together through quality drinks, delicious food, and a warm atmosphere.</p>
+          </div>
+          <div class="vm-card">
+            <h3>MISSION</h3>
+            <p>To serve high-quality coffee, matcha, and bakery products with consistency and care.</p>
+            <p>To create a comfortable and friendly environment where everyone feels at home.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- F. WHAT WE SERVE SECTION -->
+    <section class="serve-section">
+      <div class="serve-container">
+        <h2 class="serve-title">WHAT WE SERVE</h2>
+        <p class="serve-sub">Made with quality ingredients and prepared with care</p>
+        <div class="serve-grid">
+
+          <!-- Coffee card -->
+          <div class="serve-card">
+            <div class="serve-img-wrap">
+              <img src="images/3.jpg.jpeg" />
+              <div class="serve-img-hint"></div>
+            </div>
+            <div class="serve-info">
+              <i class="ri-cup-line serve-cat-icon"></i>
+              <h3>COFFEE</h3>
+              <p>Every cup of coffee is carefully crafted to bring warmth and comfort.</p>
+            </div>
+          </div>
+
+          <!-- Matcha card -->
+          <div class="serve-card">
+            <div class="serve-img-wrap">
+              <img src="images/4.jpg.webp" />
+              <div class="serve-img-hint"></div>
+            </div>
+            <div class="serve-info">
+              <i class="ri-leaf-line serve-cat-icon"></i>
+              <h3>MATCHA</h3>
+              <p>Made from premium matcha powder, our drinks offer a refreshing flavor and a smooth, enjoyable experience.</p>
+            </div>
+          </div>
+
+          <!-- Bakery card -->
+          <div class="serve-card">
+            <div class="serve-img-wrap">
+              <img src="images/5.jpg.webp" />
+              <div class="serve-img-hint"></div>
+            </div>
+            <div class="serve-info">
+              <i class="ri-bread-line serve-cat-icon"></i>
+              <h3>BAKERY</h3>
+              <p>Freshly baked every day with quality ingredients, our pastries and breads are perfect for any time of the day.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- G. CONTACT SECTION -->
+    <section class="contact-section">
+      <h2 class="contact-title">CONTACT US</h2>
+      <div class="contact-grid">
+        <div class="contact-item">
+          <i class="ri-map-pin-line"></i>
+          <span>Jl. Sriwijaya 02, Bogor</span>
+        </div>
+        <div class="contact-item">
+          <i class="ri-mail-line"></i>
+          <span>Kopiku19@gmail.com</span>
+        </div>
+        <div class="contact-item">
+          <i class="ri-phone-line"></i>
+          <span>+62 85711207218</span>
+        </div>
+        <div class="contact-item">
+          <i class="ri-instagram-line"></i>
+          <span>@KopikuJlsriwijaya</span>
+        </div>
+      </div>
+    </section>
+
+  </main><!-- end #homePage -->
+
+  <!-- ==================== MENU PAGE ==================== -->
+  <main id="menuPage" class="page">
+
+    <section class="menu-section">
+      <div class="menu-header">
+        <h1 class="menu-title">Our Menu</h1>
+        <p class="menu-sub">Crafted with passion, served with love</p>
+      </div>
+
+      <!-- Tab Buttons -->
+      <div class="menu-tabs">
+        <button class="tab-btn active" data-tab="coffee" onclick="switchTab('coffee', this)">
+          <i class="ri-cup-line"></i> Coffee
+        </button>
+        <button class="tab-btn" data-tab="matcha" onclick="switchTab('matcha', this)">
+          <i class="ri-leaf-line"></i> Matcha
+        </button>
+        <button class="tab-btn" data-tab="bakery" onclick="switchTab('bakery', this)">
+          <i class="ri-bread-line"></i> Bakery
+        </button>
+      </div>
+
+      <div class="tab-content active" id="tab-coffee">
+  <div class="menu-grid">
+    <div class="menu-card"><img src="images/12c.jpg.jpeg" alt="Espresso" class="menu-full-img"></div>
+    <div class="menu-card"><img src="images/13c.jpg.jpeg" alt="Americano" class="menu-full-img"></div>
+    <div class="menu-card"><img src="images/14c.jpg.jpeg" alt="Cappuccino" class="menu-full-img"></div>
+    <div class="menu-card"><img src="images/15c.jpg.jpeg" alt="Caramel Macchiato" class="menu-full-img"></div>
+    <div class="menu-card"><img src="images/16c.jpg.jpeg" alt="Hazelnut Latte" class="menu-full-img"></div>
+    <div class="menu-card"><img src="images/17c.jpg.jpeg" alt="Brown Sugar Coffee" class="menu-full-img"></div>
+  </div>
+</div>
+
+<div class="tab-content" id="tab-matcha">
+  <div class="menu-grid">
+    <div class="menu-card"><img src="images/18m.jpg.jpeg" alt="Matcha Original" class="menu-full-img"></div>
+    <div class="menu-card"><img src="images/19m.jpg.jpeg" alt="Brown Sugar Matcha" class="menu-full-img"></div>
+    <div class="menu-card"><img src="images/20m.jpg.jpeg" alt="Matcha Oreo" class="menu-full-img"></div>
+    <div class="menu-card"><img src="images/21m.jpg.jpeg" alt="Matcha Cheese" class="menu-full-img"></div>
+    <div class="menu-card"><img src="images/22m.jpg.jpeg" alt="Matcha Pudding" class="menu-full-img"></div>
+    <div class="menu-card"><img src="images/23m.jpg.jpeg" alt="Choco Matcha" class="menu-full-img"></div>
+  </div>
+</div>
+
+<div class="tab-content" id="tab-bakery">
+  <div class="menu-grid">
+    <div class="menu-card"><img src="images/6b.jpg.jpeg" alt="Butter Croissant" class="menu-full-img"></div>
+    <div class="menu-card"><img src="images/7b.jpg.jpeg" alt="Pain au Chocolat" class="menu-full-img"></div>
+    <div class="menu-card"><img src="images/8b.jpg.jpeg" alt="Cinnamon Roll" class="menu-full-img"></div>
+    <div class="menu-card"><img src="images/9b.jpg.jpeg" alt="Cheese Danish" class="menu-full-img"></div>
+    <div class="menu-card"><img src="images/10b.jpg.jpeg" alt="Almond Croissant" class="menu-full-img"></div>
+    <div class="menu-card"><img src="images/11b.jpg.jpeg" alt="Banana Bread" class="menu-full-img"></div>
+  </div>
+</div>
+
+    </section>
+  </main><!-- end #menuPage -->
+
+  <script src="script (1).js"></script>
+</body>
+</html>
